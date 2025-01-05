@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/background_gradient"
-    tools:context=".AddSupplyActivity">
+    tools:context=".WithdrawSupplyActivity">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -16,7 +16,7 @@
         android:padding="5dp"
         android:id="@+id/header"
         android:contentDescription="@string/menu"
-        android:background="@color/frost">
+        android:background="@color/warm_green">
 
         <Button
             android:layout_width="50dp"
@@ -31,7 +31,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="@string/add_supply"
+            android:text="@string/withdraw_supply"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:textSize="40sp"/>
@@ -55,7 +55,7 @@
                 android:layout_height="50dp"
                 android:background="@color/white"
                 android:layout_marginVertical="5sp"
-                android:hint="@string/enter_supplier_name"
+                android:hint="@string/enter_dealer_name"
                 android:id="@+id/supplierName"
                 android:inputType="textPersonName"/>
 
@@ -88,8 +88,8 @@
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:background="@drawable/rectangle_shape"
-                app:backgroundTint="@color/navy"
-                android:text="@string/add"
+                app:backgroundTint="@color/warm_green"
+                android:text="@string/withdraw"
                 android:textSize="25sp"
                 android:textStyle="bold"
                 android:layout_marginVertical="15dp"/>
@@ -103,7 +103,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="5dp"
-        android:background="@color/frost"
+        android:background="@color/warm_green"
         android:id="@+id/footer"
         android:layout_alignParentBottom="true">
 

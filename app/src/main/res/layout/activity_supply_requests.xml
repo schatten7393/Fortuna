@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/background_gradient"
-    tools:context=".AddSupplyActivity">
+    tools:context=".SupplyRequestsActivity">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -31,7 +31,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="@string/add_supply"
+            android:text="@string/supply_requests"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:textSize="40sp"/>
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/header"
         android:layout_above="@id/footer"
-        android:padding="20dp"
+        android:padding="10dp"
         android:gravity="center">
 
         <LinearLayout
@@ -50,50 +50,10 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center">
-            <EditText
+
+            <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@color/white"
-                android:layout_marginVertical="5sp"
-                android:hint="@string/enter_supplier_name"
-                android:id="@+id/supplierName"
-                android:inputType="textPersonName"/>
-
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginVertical="5sp"
-                android:id="@+id/supplyTypeSpinner"
-                android:background="@color/white" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@color/white"
-                android:layout_marginVertical="5sp"
-                android:hint="@string/enter_product_name"
-                android:id="@+id/productName"
-                android:inputType="text"/>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@color/white"
-                android:layout_marginVertical="5sp"
-                android:hint="@string/quantity"
-                android:id="@+id/quantity"
-                android:inputType="numberDecimal"/>
-
-            <Button
-                android:layout_width="200dp"
-                android:layout_height="50dp"
-                android:background="@drawable/rectangle_shape"
-                app:backgroundTint="@color/navy"
-                android:text="@string/add"
-                android:textSize="25sp"
-                android:textStyle="bold"
-                android:layout_marginVertical="15dp"/>
-
+                android:layout_height="wrap_content"/>
         </LinearLayout>
 
 

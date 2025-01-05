@@ -15,6 +15,18 @@
         android:theme="@style/Theme.FortunaApp"
         tools:targetApi="31">
         <activity
+            android:name=".InventoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SupplyRequestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TransactionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WithdrawSupplyActivity"
+            android:exported="false" />
+        <activity
             android:name=".AddSupplyActivity"
             android:exported="false" />
         <activity

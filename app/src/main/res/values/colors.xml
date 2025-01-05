@@ -6,5 +6,9 @@
     <color name="sakura">#ffd3b6</color>
     <color name="warm_green">#5ea758</color>
     <color name="pink">	#ff7251</color>
+    <color name="navy">#0a2344</color>
+    <color name="indigo">#eeeeee</color>
+    <color name="indigo2">#849cb2</color>
+    <color name="frost">#326C81</color>
 
 </resources>
