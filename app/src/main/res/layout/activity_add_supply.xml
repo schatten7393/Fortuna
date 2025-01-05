@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient"
+    tools:context=".InvManDashboardActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:padding="5dp"
+        android:id="@+id/header"
+        android:contentDescription="@string/menu"
+        android:background="@color/warm_green">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:id="@+id/backButton"
+            android:layout_marginRight="10dp"
+            android:contentDescription="Go Back"
+            android:drawableTop="@drawable/baseline_arrow_back_24"
+            android:background="null"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Add Supply"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="40dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_above="@id/footer"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:layout_marginVertical="5sp"
+            android:hint="Enter Supplier Name"
+            android:id="@+id/supplierName"
+            android:inputType="textPersonName"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginVertical="5sp"
+                android:id="@+id/supplyTypeSpinner"
+                android:background="@color/white" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:layout_marginVertical="5sp"
+                android:hint="Enter Product Name"
+                android:id="@+id/productName"
+                android:inputType="text"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:layout_marginVertical="5sp"
+                android:hint="Quantity"
+                android:id="@+id/quantity"
+                android:inputType="numberDecimal"/>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rectangle_shape"
+                app:backgroundTint="@color/warm_green"
+                android:text="Add"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_marginVertical="15dp"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/warm_green"
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="200dp"
+            android:layout_height="65dp"
+            android:background="null"
+            android:contentDescription="Home Button"
+            android:drawableTop="@drawable/house_solid" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="65dp"
+            android:id="@+id/profileButton"
+            android:drawableTop="@drawable/profile"
+            android:contentDescription="Profile Button"
+            android:background="null"/>
+    </LinearLayout>
+
+</RelativeLayout>

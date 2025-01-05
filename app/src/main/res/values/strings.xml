@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FortunaApp</string>
+    <string name="menu">overflowMenu</string>
 </resources>
