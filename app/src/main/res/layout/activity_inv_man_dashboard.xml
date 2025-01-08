@@ -25,7 +25,7 @@
             android:id="@+id/logoutButton"
             android:contentDescription="@string/logout"
             android:drawableEnd="@drawable/power_off_solid"
-            android:background="null"
+            android:background="@color/transparent"
             android:padding="5dp"/>
     </LinearLayout>
 
@@ -149,7 +149,7 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="200dp"
             android:layout_height="80dp"
-            android:background="null"
+            android:background="@color/transparent"
             android:contentDescription="@string/home_button"
             android:drawableTop="@drawable/house_solid"
             android:layout_gravity="start"
@@ -162,7 +162,7 @@
             android:id="@+id/profileButton"
             android:drawableTop="@drawable/profile"
             android:contentDescription="@string/profile_button"
-            android:background="null"
+            android:background="@color/transparent"
             android:layout_gravity="end"
             android:text="Profile"/>
     </LinearLayout>
