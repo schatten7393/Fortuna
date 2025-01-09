@@ -3,7 +3,9 @@ package com.example.fortunaapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +17,8 @@ public class WithdrawSupplyActivity extends AppCompatActivity {
 
     Button backButton, homeButton, profileButton;
 
+    Spinner supplyTypeSpinner;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +28,8 @@ public class WithdrawSupplyActivity extends AppCompatActivity {
         backButton = findViewById(R.id.backButton);
         homeButton = findViewById(R.id.homeButton);
         profileButton = findViewById(R.id.profileButton);
+        supplyTypeSpinner = findViewById(R.id.supplyTypeSpinner);
+
 
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,5 +51,15 @@ public class WithdrawSupplyActivity extends AppCompatActivity {
                 startActivity(new Intent(WithdrawSupplyActivity.this, ProfileActivity.class));
             }
         });*/
+
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+                this,
+                R.array.supplyType,
+                android.R.layout.simple_spinner_item
+        );
+
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        supplyTypeSpinner.setAdapter(adapter);
     }
 }

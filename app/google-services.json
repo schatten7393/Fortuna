@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "500797423487",
+    "project_id": "fortuna-app-fern-miyuki",
+    "storage_bucket": "fortuna-app-fern-miyuki.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500797423487:android:3bebf4c904d1254037e44a",
+        "android_client_info": {
+          "package_name": "com.example.fortunaapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo9x-cJqo2KIGrWrpRGhcOpuOwqJJSD-M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

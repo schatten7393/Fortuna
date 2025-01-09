@@ -17,4 +17,22 @@
     <string name="inventory">Inventory</string>
     <string name="logout">Logout</string>
     <string name="home">Home</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="login">Login</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string-array name="supplyType">
+        <item>Select Supply Type</item>
+        <item>Fruits</item>
+        <item>Vegetables</item>
+        <item>Meat</item>
+        <item>Fish</item>
+        <item>Fertilizer</item>
+        <item>Seeds</item>
+    </string-array>
+    <string-array name="userType">
+        <item>Select Supply Type</item>
+        <item>Dealer</item>
+        <item>Inventory Manager</item>
+    </string-array>
 </resources>

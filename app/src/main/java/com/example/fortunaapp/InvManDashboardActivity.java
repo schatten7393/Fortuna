@@ -7,11 +7,9 @@ import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class InvManDashboardActivity extends AppCompatActivity {
+
 
     Button logoutButton, homeButton, profileButton;
 
@@ -32,6 +30,8 @@ public class InvManDashboardActivity extends AppCompatActivity {
         transactionButton = findViewById(R.id.transactionButton);
         supplyRequestsButton = findViewById(R.id.supplyRequestsButton);
         inventoryButton = findViewById(R.id.inventoryButton);
+
+        //Setting up the onclick methods for all the buttons
 
         addSupplyButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,6 +85,7 @@ public class InvManDashboardActivity extends AppCompatActivity {
         profileButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 startActivity(new Intent(InvManDashboardActivity.this, ProfileActivity.class));
             }
         });*/
