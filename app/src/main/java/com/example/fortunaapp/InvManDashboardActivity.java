@@ -91,19 +91,6 @@ public class InvManDashboardActivity extends AppCompatActivity {
                 startActivity(new Intent(InvManDashboardActivity.this, LoginActivity.class));
             }
         });
-        /*logoutButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(InvManDashboardActivity.this, LoginActivity.class));
-            }
-        });
 
-        profileButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                startActivity(new Intent(InvManDashboardActivity.this, ProfileActivity.class));
-            }
-        });*/
     }
 }
