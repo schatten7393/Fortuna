@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.fortunaapp.R;
-import com.example.fortuna.models.Category;
+import com.example.fortunaapp.models.Category;
 import com.example.fortunaapp.adapters.CategoryAdapter;
 
 import java.util.Arrays;
@@ -45,7 +45,6 @@ public class ManageSuppliesActivity extends AppCompatActivity implements Categor
         categoryGrid.setAdapter(adapter);
     }
 
-    @Override
     public void onCategoryClick(Category category) {
         Intent intent = new Intent(this, RequestSuppliesActivity.class);
         intent.putExtra("CATEGORY_NAME", category.getName());

@@ -1,4 +1,4 @@
-package com.example.fortuna.models;
+package com.example.fortunaapp.models;
 
 public class Category {
     private String name;
