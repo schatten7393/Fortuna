@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.fortunaapp.R;
-import com.example.fortuna.models.Category;
+import com.example.fortunaapp.models.Category;
 
 import java.util.List;
 import android.view.MenuItem;
