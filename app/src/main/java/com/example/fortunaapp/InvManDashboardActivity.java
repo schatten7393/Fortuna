@@ -8,12 +8,18 @@ import android.widget.Button;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.Firebase;
+import com.google.firebase.auth.FirebaseAuth;
+
 public class InvManDashboardActivity extends AppCompatActivity {
 
 
     Button logoutButton, homeButton, profileButton;
 
     Button addSupplyButton, withdrawSupplyButton, transactionButton, supplyRequestsButton, inventoryButton;
+
+    FirebaseAuth mAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +81,16 @@ public class InvManDashboardActivity extends AppCompatActivity {
             }
         });
 
+        //Adding logout button functionality
+        mAuth= FirebaseAuth.getInstance();
+
+        logoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(InvManDashboardActivity.this, LoginActivity.class));
+            }
+        });
         /*logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

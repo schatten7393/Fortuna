@@ -35,10 +35,7 @@
         <activity
             android:name=".InvManDashboardActivity"
             android:exported="false" />
-        <activity android:name=".activities.ManageSuppliesActivity" />
-        <activity android:name=".activities.RequestSuppliesActivity" />
-        <activity android:name=".activities.ItemsActivity" />
-        <activity android:name=".activities.MainActivity" />
+
         <activity
             android:name=".LoginActivity"
             android:exported="true">
